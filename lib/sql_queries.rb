@@ -19,8 +19,8 @@ def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_th
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
-"SELECT projects.category, pledges.amount FROM projects LEFT OUTER JOIN pledges
-  WHERE projects.category = 'music' GROUP BY projects.category;"
+#{}"SELECT projects.category, pledges.amount FROM projects LEFT OUTER JOIN pledges
+  #WHERE projects.category = 'music' GROUP BY projects.category;"
 
 "SELECT projects.category, pledges.amount FROM pledges RIGHT JOIN projects
   WHERE projects.category = 'music' GROUP BY projects.category;"
